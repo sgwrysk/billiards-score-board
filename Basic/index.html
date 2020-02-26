@@ -17,11 +17,11 @@ score
 
 <div class="container-fluid">
   <div class="row">
-    <div style="background-color:silver; padding:10pt;">
+    <div class="col-sm-10" style="background-color:silver;">
         Player 1<br>
 
 		<div id="p1">
-		  <p style="font-size: 28pt;font-style: italic;" >Score : {{ score }}</p>
+		  <p>Score : {{ score }}</p>
 		  <button v-on:click="clear">clear</button>
 		  <button v-on:click="changeScore(1)">1</button>
 		  <button v-on:click="changeScore(2)">2</button>
@@ -46,11 +46,11 @@ score
 	</div>
     
     
-    <div style="background-color:gray; padding:10pt;">
+    <div class="col-sm-10" style="background-color:gray;">
         Player 2<br>
 
 		<div id="p2">
-		  <p style="font-size: 28pt;font-style: italic;">Score : {{ score }}</p>
+		  <p>Score : {{ score }}</p>
 		  <button v-on:click="clear">clear</button>
 		  <button v-on:click="changeScore(1)">1</button>
 		  <button v-on:click="changeScore(2)">2</button>
