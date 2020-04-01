@@ -53,7 +53,8 @@ var poolTable = new Vue({
   el: '#poolTable',
   template:
     `<div>
-      <button @click="nextRack">Next Rack</button>
+      <button @click="reset" class="btnClass">Reset</button>
+      <button @click="nextRack" class="btnClass">Next Rack</button>
       <Player1 pId="1" pName="Player 1" pClass="p1" :Balls="Balls" @change="change"/>
       <Player2 pId="2" pName="Player 2" pClass="p2" :Balls="Balls" @change="change"/>
     </div>`,
@@ -97,9 +98,7 @@ var poolTable = new Vue({
       }
     },
     reset(){
-      for(let b of this.Balls){
-        b.pId = -1;
-      }
+      location.reload();
     },
     nextRack(){
       for(let b of this.Balls){
