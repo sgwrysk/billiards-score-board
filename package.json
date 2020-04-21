@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sgwrysk/billiards-score-board/issues"
   },
-  "homepage": "https://github.com/sgwrysk/billiards-score-board#readme"
+  "homepage": "https://github.com/sgwrysk/billiards-score-board#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
